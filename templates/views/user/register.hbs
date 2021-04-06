@@ -1,0 +1,63 @@
+{{> header }}
+
+<body>
+
+<!-- ======= Start Header ======= -->
+ {{> navbar}}
+ 
+<!-- ======= End Header ======= -->
+ <main id="main"  class="mt-5">
+  
+      <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Register</h2>
+          <p>Register</p>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-md-4">
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="/register" method="post" class="">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email Id" value="m@gmail.com">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="password" class="form-control" name="password" placeholder="Password" value="m">
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    
+                </div>
+                
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+    
+</main><!-- End #main -->
+
+{{> footer }}
+  
