@@ -28,8 +28,14 @@ const users = [];
 // autication code
 
 router.use(flash())
+    /*router.use(session({
+        secret: process.env.SESSION_SECRET,
+        resave: false,
+        saveUninitialized: false
+    }))*/
+
 router.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'secretidhere',
     resave: false,
     saveUninitialized: false
 }))
